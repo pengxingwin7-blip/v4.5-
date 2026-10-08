@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.1",
+  "ticker": "ADCT",
+  "rolling_days": 5,
+  "updated_at_utc": "2026-10-08T10:08:31.759045+00:00",
+  "rows": [
+    {
+      "date": "2026-10-07",
+      "market": {
+        "date": "2026-10-07",
+        "open": 1.25,
+        "high": 1.44,
+        "low": 1.24,
+        "close": 1.42,
+        "change_pct": 11.81,
+        "rvol": 1.234,
+        "spy_change_pct": -0.24,
+        "rs_vs_spy_pp": 12.05
+      },
+      "flow": {
+        "delta_total": {
+          "bid": 192683,
+          "ask": 155130,
+          "net": 37553
+        },
+        "delta_large": {
+          "bid": 83854,
+          "ask": 66713,
+          "net": 17141
+        },
+        "delta_small": {
+          "bid": 108829,
+          "ask": 88417,
+          "net": 20412
+        },
+        "iso_net": -14562,
+        "darkpool_prints_net": -163056,
+        "darkpool_prints_direction": "NET_SELL",
+        "darkpool_direction_source": "prints",
+        "darkpool_offex_net": -104823,
+        "real_net_flow": -67270,
+        "real_net_flow_direction": "NET_SELL",
+        "real_net_flow_source": "Delta+OffExchange"
+      },
+      "orderbook": {
+        "daily_avg_imbalance": -5.21,
+        "open_imbalance": -9.42,
+        "close_imbalance": 14.26,
+        "spoof_bid_pct": 4.88,
+        "spoof_ask_pct": 4.29,
+        "layering": {
+          "up": 1,
+          "down": 1
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 96,
+          "CHURN": 12,
+          "ICE_N": 21,
+          "ICE_P": 0,
+          "ICE_S1": 6,
+          "ICE_S2": 0,
+          "ICE_S3": 1,
+          "ICE_X": 13,
+          "LAYERING": 2,
+          "MATCHED": 6,
+          "TRF": 36,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 0.31,
+          "direction": "ASK",
+          "dominant": "A",
+          "ret_300s": 0.0,
+          "zone": "HIGH",
+          "price_mid": 1.4225
+        }
+      },
+      "premeditation": {
+        "bid_strong": 0,
+        "ask_strong": 17675,
+        "direction": "ASK",
+        "direction_ratio_ba": "0.00:1",
+        "status": "降级"
+      },
+      "seven_metrics_source": "21_ADCT_20261007_seven_metrics_compact.json",
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 1.435,
+            "day_low": 1.26,
+            "open": 1.26,
+            "close": 1.42
+          },
+          "walls": {
+            "bias": "ASK",
+            "candidate_count": 87,
+            "levels": [
+              {
+                "price": 1.33,
+                "side": "B",
+                "size": 20000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 1.44,
+                "side": "A",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 1.47,
+                "side": "A",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 1.31,
+                "side": "B",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 1.29,
+                "side": "B",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 1.4,
+                "side": "A",
+                "size": 10000,
+                "level": "A2"
+              },
+              {
+                "price": 1.43,
+                "side": "A",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 1.45,
+                "side": "A",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              }
+            ]
+          }
+        },
+        "volume_zones": {
+          "LOW": {
+            "vol": 45731,
+            "pct": 3.1
+          },
+          "MID": {
+            "vol": 616935,
+            "pct": 41.8
+          },
+          "HIGH": {
+            "vol": 811720,
+            "pct": 55.1
+          },
+          "source": "14_ prints RTH（剔除 Cross），区间=21_ RTH 日低/日高"
+        },
+        "trf_top1": {
+          "time": "15:02:51",
+          "price": 1.42,
+          "size": 42673,
+          "publisher_id": 82,
+          "source": "06_ TRF publisher 81-89"
+        }
+      },
+      "previous_decision_receipt": {
+        "direction": null,
+        "confidence_pct": null,
+        "deathline_text": null,
+        "deathline_price": null,
+        "actual_change_pct": 11.81,
+        "actual_label": "UP",
+        "deathline_hit": "unknown",
+        "status": "待验证",
+        "verification_basis": "actual=UP; predicted=NA"
+      },
+      "current_decision": {
+        "report": null,
+        "direction": null,
+        "confidence_pct": null,
+        "deathline_text": null,
+        "deathline_price": null
+      }
+    }
+  ]
+}

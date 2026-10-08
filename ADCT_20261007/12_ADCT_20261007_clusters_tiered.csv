@@ -1,0 +1,64 @@
+# ==================== Layer 2 · 三层分级事件表 ====================
+# 本文件名：ADCT_20261007_clusters_tiered.csv
+# 本文件在5层体系中的位置：第3个文件（总表见 ADCT_20261007_intelligence_brief.json 的 file_manifest 字段）
+# 其余4个文件：Layer0=ADCT_20261007_intelligence_brief.json(情报头文件（总表）) / Layer1=ADCT_20261007_narrative.md(叙事报告) / Layer3=ADCT_20261007_events_material.csv(精选事件明细表) / Layer4=ADCT_20261007_machine_input.json(机器输入文件)
+# 定位：替代旧 behavior_clusters.csv，按重要性(T1>T2>T3)分级，重点在前流水在后。
+# 本文件目录：T1层（重点先看·冰山和对倒在前，其后谎骗->TRF->流动性真空->收盘吸收） -> T2层（同排序，中等重要性） -> FAMILY_TOTAL_SUMMARY（按全部家族强制列出全层级汇总，不列明细）
+# 本文件内容概述：结构化事件簇表格，每行一个行为簇，含方向/量/回报/意图/置信度等字段，机器可读，用于按重要性快速筛选证据。
+# 排序原则：冰山->对倒->谎骗->TRF->流动性真空->收盘吸收->其余
+# 价格分带：LOW≤1.32 / MID 1.32-1.38 / HIGH≥1.38（日高1.44 日低1.26，源CSV的price_zone列按day_low/day_high等分三档计算）
+# T1/T2沿用原价格反应敏感度并按事件价换算为tick；T1 volume>10000，T2 volume>2000；T3=其余；底部汇总=T1+T2+T3全层级
+#
+# ========== T1层（重点先看·冰山和对倒在前） ==========
+cluster_id(事件簇编号),materiality_tier(重要性T1最高/T2中等/T3流水),event_type(行为类型),cluster_family(家族组合),candidate_side(方向B买A卖N中性),price_level(中位价$),price_zone(价带HIGH/MID/LOW),total_volume(总量股),event_count(簇内事件数),duration_s(持续秒),ret_300s(300秒移动tick),ret_60s(60秒移动tick),ret_30s(30秒移动tick),spoof_color(BLUE卖谎骗/RED买谎骗/YELLOW未确认/-),vol_to_price_drive(每万股推价tick),start_time(起始时间ET),venue_count(交易所数),confidence(置信度%)
+9bc6bc7c,T1,CANCEL+LAYERING_B_HIGH_1836_1841,CANCEL+LAYERING,B,1.40,HIGH,50256,20,325.4,2.5,1.0,1.0,RED,0.5,14:36,4,44.95
+ff2eae52,T1,TRF_N_MID_1547_1548,TRF,N,1.38,MID,80100,1,83.3,0.5,0.0,0.0,-,0.06,11:47,,50.0
+45476513,T1,TRF_N_MID_1410_1412,TRF,N,1.32,MID,68889,1,137.2,0.5,0.0,0.0,-,0.07,10:10,,50.0
+3771020e,T1,TRF_N_HIGH_1902_1905,TRF,N,1.43,HIGH,63997,1,150.1,-1.0,-1.0,-1.5,-,-0.16,15:02,,50.0
+c2f8c9b0,T1,TRF_N_HIGH_1955_2001,TRF,N,1.42,HIGH,30815,1,357.1,0.5,0.0,0.0,-,0.16,15:55,,50.0
+755adc3d,T1,TRF_N_MID_1444_1453,TRF,N,1.36,MID,29345,1,495.5,1.5,0.0,0.0,-,0.51,10:44,,50.0
+b28f03eb,T1,TRF_N_HIGH_1505_1513,TRF,N,1.40,HIGH,24497,1,463.2,2.0,0.0,0.0,-,0.82,11:05,,50.0
+b7e0b165,T1,TRF_N_HIGH_1920_1927,TRF,N,1.42,HIGH,19790,1,430.9,-0.5,-0.5,-0.5,-,-0.25,15:20,,50.0
+dcc481ac,T1,TRF_N_HIGH_1826_1826,TRF,N,1.39,HIGH,14303,1,1.2,0.5,0.5,0.0,-,0.35,14:26,,43.61
+2f857fd1,T1,TRF_N_LOW_1417_1417,TRF,N,1.32,LOW,13568,1,38.7,1.0,0.0,0.0,-,0.74,10:17,,42.14
+4513ca62,T1,TRF_N_HIGH_1838_1840,TRF,N,1.40,HIGH,11475,1,134.3,3.5,0.5,0.5,-,3.05,14:38,,37.95
+87d672eb,T1,CHURN_N_HIGH_1717_1718,CHURN,N,1.38,HIGH,27446,1,14.7,0.5,0.5,0.5,-,0.18,13:17,,60.0
+5e70576d,T1,CHURN_N_MID_1447_1447,CHURN,N,1.35,MID,19263,1,31.9,1.5,0.5,-0.5,-,0.78,10:47,,55.0
+b2be3819,T1,CHURN_N_HIGH_1941_1941,CHURN,N,1.41,HIGH,17582,1,9.1,-0.5,-0.5,-0.5,-,-0.28,15:41,,59.0
+79f787d5,T1,CHURN_N_MID_1504_1505,CHURN,N,1.37,MID,11292,1,37.4,2.0,0.0,0.0,-,1.77,11:04,,60.0
+#
+# ========== T2层 ==========
+29f5f3be,T2,ICE_N_B_HIGH_1938_1941,ICE_N,B,1.42,HIGH,3613,4,175.3,-0.75,-0.5,-0.5,-,-2.08,15:38,2,41.0
+740b8e50,T2,ICE_X_B_MID_1447_1447,ICE_X,B,1.35,MID,2712,2,0.0,1.5,0.5,0.5,-,5.53,10:47,2,53.0
+abfebe71,T2,ICE_N+ICE_X_B_MID_1453_1453,ICE_N+ICE_X,B,1.37,MID,2443,3,0.0,-0.5,-0.5,-0.5,-,-2.05,10:53,3,46.33
+13c2236f,T2,ICE_N_A_HIGH_1839_1839,ICE_N,A,1.40,HIGH,2430,2,0.0,2.75,1.25,1.25,-,11.32,14:39,2,41.0
+f657dc25,T2,ICE_N_B_HIGH_1920_1920,ICE_N,B,1.42,HIGH,2400,2,0.0,-0.5,-0.5,-0.5,-,-2.08,15:20,1,41.0
+917f9135,T2,MATCHED_N_HIGH_1958_1959,MATCHED,N,1.43,HIGH,8704,3,62.9,-0.75,-1.0,-0.5,-,-0.86,15:58,,20.0
+e691ee90,T2,CANCEL+LAYERING_A_HIGH_1958_2000,CANCEL+LAYERING,A,1.43,HIGH,112660,19,76.1,0.0,0.0,-0.5,BLUE,0.0,15:58,4,44.71
+30b1d188,T2,CANCEL_B_HIGH_1955_1955,CANCEL,B,1.41,HIGH,3443,2,22.7,0.5,-0.25,0.0,RED,1.45,15:55,1,45.0
+65a69af5,T2,TRF_N_HIGH_1854_1856,TRF,N,1.43,HIGH,6700,1,112.0,1.5,0.0,0.0,-,2.24,14:54,,28.4
+119b5741,T2,TRF_N_HIGH_1843_1845,TRF,N,1.42,HIGH,5766,1,101.6,-0.5,0.0,0.0,-,-0.87,14:43,,26.53
+a0a5836a,T2,TRF_N_MID_1455_1455,TRF,N,1.36,MID,3500,1,16.1,0.5,0.0,0.0,-,1.43,10:55,,22.0
+01b4aeba,T2,TRF_N_HIGH_1929_1931,TRF,N,1.42,HIGH,2520,1,113.4,0.5,0.0,0.0,-,1.98,15:29,,20.04
+413d6bfe,T2,TRF_N_MID_1438_1438,TRF,N,1.35,MID,2408,1,0.9,1.5,1.5,1.0,-,6.23,10:38,,19.82
+cand_f50,T2,rolling_layering_candidate,LAYERING,B,1.40,HIGH,8400,3,145.8,2.5,1.0,1.0,YELLOW,2.98,14:39,2,44.0
+cand_b75,T2,rolling_layering_candidate,LAYERING,A,1.43,HIGH,5846,3,0.1,-1.0,-1.0,-1.5,YELLOW,-1.71,15:59,1,44.0
+4d549ca0,T2,CHURN_N_HIGH_1958_2000,CHURN,N,1.42,HIGH,228767,2,112.2,0.25,0.25,0.25,-,0.01,15:58,,60.0
+239ccd2e,T2,CHURN_N_HIGH_1510_1510,CHURN,N,1.40,HIGH,8660,1,4.5,-0.5,1.0,1.0,-,-0.58,11:10,,60.0
+35387f6d,T2,CHURN_N_LOW_1342_1343,CHURN,N,1.29,LOW,8236,1,50.1,2.0,1.0,1.0,-,2.43,09:42,,35.0
+46bd2ade,T2,CHURN_N_HIGH_1946_1946,CHURN,N,1.42,HIGH,7602,1,0.0,1.0,1.0,1.0,-,1.32,15:46,,31.0
+#
+# ========== [FAMILY_TOTAL_SUMMARY] 按全部家族强制汇总（T1+T2+T3，count=0也列出） ==========
+# ICE_N: count=14 volume=17008
+# ICE_S1: count=4 volume=1839
+# ICE_S2: count=0 volume=0
+# ICE_S3: count=1 volume=1412
+# ICE_X: count=9 volume=9126
+# ICE_P: count=0 volume=0
+# ABSORB: count=0 volume=0
+# CANCEL: count=7 volume=210854
+# LAYERING: count=2 volume=14246
+# TRF: count=36 volume=498113
+# Liquidity Void: count=0 volume=0
+# MATCHED: count=4 volume=13298
+# CHURN: count=11 volume=350441
