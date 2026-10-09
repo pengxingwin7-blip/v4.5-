@@ -1,0 +1,569 @@
+{
+  "schema_version": "1.1",
+  "ticker": "LXEO",
+  "rolling_days": 5,
+  "updated_at_utc": "2026-10-08T07:16:55.535885+00:00",
+  "rows": [
+    {
+      "date": "2026-10-05",
+      "market": {
+        "date": "2026-10-05",
+        "open": 3.56,
+        "high": 3.655,
+        "low": 3.37,
+        "close": 3.41,
+        "change_pct": -3.4,
+        "rvol": 1.085,
+        "spy_change_pct": 0.67,
+        "rs_vs_spy_pp": -4.07
+      },
+      "flow": {
+        "delta_total": {
+          "bid": 193611,
+          "ask": 229614,
+          "net": -36003
+        },
+        "delta_large": {
+          "bid": 58983,
+          "ask": 58461,
+          "net": 522
+        },
+        "delta_small": {
+          "bid": 134628,
+          "ask": 171153,
+          "net": -36525
+        },
+        "iso_net": 32863,
+        "darkpool_prints_net": 84638,
+        "darkpool_prints_direction": "NET_BUY",
+        "darkpool_direction_source": "prints",
+        "darkpool_offex_net": 39951,
+        "real_net_flow": 3948,
+        "real_net_flow_direction": "NET_BUY",
+        "real_net_flow_source": "Delta+OffExchange"
+      },
+      "orderbook": {
+        "daily_avg_imbalance": 9.01,
+        "open_imbalance": -4.71,
+        "close_imbalance": 16.78,
+        "spoof_bid_pct": 14.26,
+        "spoof_ask_pct": 12.04,
+        "layering": {
+          "up": 1,
+          "down": 3
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 730,
+          "CHURN": 69,
+          "ICE_N": 31,
+          "ICE_P": 0,
+          "ICE_S1": 22,
+          "ICE_S2": 3,
+          "ICE_S3": 1,
+          "ICE_X": 50,
+          "LAYERING": 4,
+          "MATCHED": 11,
+          "TRF": 33,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 12.44,
+          "direction": "BID",
+          "dominant": "B",
+          "ret_300s": -0.5,
+          "zone": "LOW",
+          "price_mid": 3.41
+        }
+      },
+      "premeditation": {
+        "bid_strong": 4339,
+        "ask_strong": 0,
+        "direction": "BID",
+        "direction_ratio_ba": "∞:1",
+        "status": "降级"
+      },
+      "seven_metrics_source": "21_LXEO_20261005_seven_metrics_compact.json",
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 3.95,
+            "day_low": 3.32,
+            "open": 3.48,
+            "close": 3.41
+          },
+          "walls": {
+            "bias": "ASK",
+            "candidate_count": 251,
+            "levels": [
+              {
+                "price": 3.37,
+                "side": "B",
+                "size": 16400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.36,
+                "side": "B",
+                "size": 16400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.34,
+                "side": "B",
+                "size": 16400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.44,
+                "side": "A",
+                "size": 13100,
+                "level": "A1"
+              },
+              {
+                "price": 3.45,
+                "side": "A",
+                "size": 13100,
+                "level": "A3"
+              },
+              {
+                "price": 3.47,
+                "side": "A",
+                "size": 13100,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.51,
+                "side": "B",
+                "size": 4339,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.39,
+                "side": "B",
+                "size": 3300,
+                "level": "B1"
+              }
+            ]
+          }
+        },
+        "volume_zones": {
+          "LOW": {
+            "vol": 375766,
+            "pct": 24.8
+          },
+          "MID": {
+            "vol": 363297,
+            "pct": 23.9
+          },
+          "HIGH": {
+            "vol": 779104,
+            "pct": 51.3
+          },
+          "source": "14_ prints RTH（剔除 Cross），区间=21_ RTH 日低/日高"
+        },
+        "trf_top1": {
+          "time": "16:00:00",
+          "price": 3.41,
+          "size": 165400,
+          "publisher_id": 81,
+          "source": "06_ TRF publisher 81-89"
+        }
+      },
+      "previous_decision_receipt": {
+        "direction": null,
+        "confidence_pct": null,
+        "deathline_text": null,
+        "deathline_price": null,
+        "actual_change_pct": -3.4,
+        "actual_label": "DOWN",
+        "deathline_hit": "unknown",
+        "status": "待验证",
+        "verification_basis": "actual=DOWN; predicted=NA"
+      },
+      "current_decision": {
+        "report": "C:\\Users\\Administrator\\Desktop\\opus v4.5\\LXEO-2026-10-05-Hermes.md",
+        "direction": "盘",
+        "confidence_pct": 55.0,
+        "deathline_text": "止损位：**$3.22**（以 3.34 成本计 −3.6%；位于箱底 3.28 与 SMC 需求区下沿 3.30 之下）",
+        "deathline_price": 3.22
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "market": {
+        "date": "2026-10-06",
+        "open": 3.43,
+        "high": 3.43,
+        "low": 3.175,
+        "close": 3.3,
+        "change_pct": -3.23,
+        "rvol": 0.859,
+        "spy_change_pct": 0.55,
+        "rs_vs_spy_pp": -3.78
+      },
+      "flow": {
+        "delta_total": {
+          "bid": 179249,
+          "ask": 168230,
+          "net": 11019
+        },
+        "delta_large": {
+          "bid": 76883,
+          "ask": 62958,
+          "net": 13925
+        },
+        "delta_small": {
+          "bid": 102366,
+          "ask": 105272,
+          "net": -2906
+        },
+        "iso_net": 9324,
+        "darkpool_prints_net": 36928,
+        "darkpool_prints_direction": "NET_BUY",
+        "darkpool_direction_source": "prints",
+        "darkpool_offex_net": 37765,
+        "real_net_flow": 48784,
+        "real_net_flow_direction": "NET_BUY",
+        "real_net_flow_source": "Delta+OffExchange"
+      },
+      "orderbook": {
+        "daily_avg_imbalance": 11.87,
+        "open_imbalance": -5.42,
+        "close_imbalance": -13.18,
+        "spoof_bid_pct": 6.12,
+        "spoof_ask_pct": 8.07,
+        "layering": {
+          "up": 4,
+          "down": 4
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 541,
+          "CHURN": 40,
+          "ICE_N": 34,
+          "ICE_P": 0,
+          "ICE_S1": 12,
+          "ICE_S2": 3,
+          "ICE_S3": 0,
+          "ICE_X": 31,
+          "LAYERING": 8,
+          "MATCHED": 9,
+          "TRF": 37,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 3.02,
+          "direction": "BID",
+          "dominant": "B",
+          "ret_300s": -0.5,
+          "zone": "LOW",
+          "price_mid": 3.1975
+        }
+      },
+      "premeditation": {
+        "bid_strong": 5900,
+        "ask_strong": 1900,
+        "direction": "BID",
+        "direction_ratio_ba": "3.11:1",
+        "status": "降级"
+      },
+      "seven_metrics_source": "21_LXEO_20261006_seven_metrics_compact.json",
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 3.43,
+            "day_low": 3.175,
+            "open": 3.34,
+            "close": 3.3
+          },
+          "walls": {
+            "bias": "BID",
+            "candidate_count": 204,
+            "levels": [
+              {
+                "price": 3.26,
+                "side": "B",
+                "size": 24000,
+                "level": "B4"
+              },
+              {
+                "price": 3.33,
+                "side": "A",
+                "size": 16500,
+                "level": "A4"
+              },
+              {
+                "price": 3.32,
+                "side": "A",
+                "size": 12085,
+                "level": "A1"
+              },
+              {
+                "price": 3.16,
+                "side": "B",
+                "size": 10000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.17,
+                "side": "B",
+                "size": 5000,
+                "level": "B2"
+              },
+              {
+                "price": 3.18,
+                "side": "B",
+                "size": 5000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.32,
+                "side": "B",
+                "size": 5000,
+                "level": "B1"
+              },
+              {
+                "price": 3.2,
+                "side": "B",
+                "size": 5000,
+                "level": "OUTSIDE_L5"
+              }
+            ]
+          }
+        },
+        "volume_zones": {
+          "LOW": {
+            "vol": 174265,
+            "pct": 14.0
+          },
+          "MID": {
+            "vol": 929542,
+            "pct": 74.4
+          },
+          "HIGH": {
+            "vol": 145289,
+            "pct": 11.6
+          },
+          "source": "14_ prints RTH（剔除 Cross），区间=21_ RTH 日低/日高"
+        },
+        "trf_top1": {
+          "time": "16:00:00",
+          "price": 3.3,
+          "size": 150183,
+          "publisher_id": 81,
+          "source": "06_ TRF publisher 81-89"
+        }
+      },
+      "previous_decision_receipt": {
+        "direction": "盘",
+        "confidence_pct": 55.0,
+        "deathline_text": "止损位：**$3.22**（以 3.34 成本计 −3.6%；位于箱底 3.28 与 SMC 需求区下沿 3.30 之下）",
+        "deathline_price": 3.22,
+        "actual_change_pct": -3.23,
+        "actual_label": "DOWN",
+        "deathline_hit": "unknown",
+        "status": "未应验",
+        "verification_basis": "actual=DOWN; predicted=FLAT"
+      },
+      "current_decision": {
+        "report": "C:\\Users\\Administrator\\Desktop\\opus v4.5\\LXEO-2026-10-06-Hermes.md",
+        "direction": "盘",
+        "confidence_pct": 55.0,
+        "deathline_text": "止损位：**$3.08**（以 3.20 成本计 −3.75%；位于日低 3.175 与 3.20–3.25 低量空档之下、SMC 需求区上沿 3.04 之上）",
+        "deathline_price": 3.08
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "market": {
+        "date": "2026-10-07",
+        "open": 3.27,
+        "high": 3.47,
+        "low": 3.22,
+        "close": 3.31,
+        "change_pct": 0.3,
+        "rvol": 0.646,
+        "spy_change_pct": -0.24,
+        "rs_vs_spy_pp": 0.54
+      },
+      "flow": {
+        "delta_total": {
+          "bid": 213842,
+          "ask": 168195,
+          "net": 45647
+        },
+        "delta_large": {
+          "bid": 62186,
+          "ask": 31892,
+          "net": 30294
+        },
+        "delta_small": {
+          "bid": 151656,
+          "ask": 136303,
+          "net": 15353
+        },
+        "iso_net": 32591,
+        "darkpool_prints_net": -1047,
+        "darkpool_prints_direction": "NET_SELL",
+        "darkpool_direction_source": "prints",
+        "darkpool_offex_net": -26255,
+        "real_net_flow": 19392,
+        "real_net_flow_direction": "NET_BUY",
+        "real_net_flow_source": "Delta+OffExchange"
+      },
+      "orderbook": {
+        "daily_avg_imbalance": 4.97,
+        "open_imbalance": 19.97,
+        "close_imbalance": 16.29,
+        "spoof_bid_pct": 3.67,
+        "spoof_ask_pct": 6.21,
+        "layering": {
+          "up": 5,
+          "down": 5
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 491,
+          "CHURN": 46,
+          "ICE_N": 24,
+          "ICE_P": 0,
+          "ICE_S1": 24,
+          "ICE_S2": 7,
+          "ICE_S3": 4,
+          "ICE_X": 47,
+          "LAYERING": 23,
+          "MATCHED": 3,
+          "TRF": 27,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 0.26,
+          "direction": "ASK",
+          "dominant": "A",
+          "ret_300s": -1.5,
+          "zone": "HIGH",
+          "price_mid": 3.39
+        }
+      },
+      "premeditation": {
+        "bid_strong": 100,
+        "ask_strong": 0,
+        "direction": "BID",
+        "direction_ratio_ba": "∞:1",
+        "status": "降级"
+      },
+      "seven_metrics_source": "21_LXEO_20261007_seven_metrics_compact.json",
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 3.465,
+            "day_low": 3.01,
+            "open": 3.1,
+            "close": 3.31
+          },
+          "walls": {
+            "bias": "BID",
+            "candidate_count": 446,
+            "levels": [
+              {
+                "price": 3.31,
+                "side": "B",
+                "size": 20000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 3.35,
+                "side": "B",
+                "size": 20000,
+                "level": "B3"
+              },
+              {
+                "price": 3.43,
+                "side": "B",
+                "size": 20000,
+                "level": "B1"
+              },
+              {
+                "price": 3.36,
+                "side": "B",
+                "size": 20000,
+                "level": "B1"
+              },
+              {
+                "price": 3.28,
+                "side": "B",
+                "size": 15500,
+                "level": "B4"
+              },
+              {
+                "price": 3.35,
+                "side": "A",
+                "size": 15500,
+                "level": "A4"
+              },
+              {
+                "price": 3.27,
+                "side": "B",
+                "size": 15500,
+                "level": "B5"
+              },
+              {
+                "price": 3.36,
+                "side": "A",
+                "size": 15500,
+                "level": "A5"
+              }
+            ]
+          }
+        },
+        "volume_zones": {
+          "LOW": {
+            "vol": 127327,
+            "pct": 13.0
+          },
+          "MID": {
+            "vol": 583658,
+            "pct": 59.8
+          },
+          "HIGH": {
+            "vol": 265686,
+            "pct": 27.2
+          },
+          "source": "14_ prints RTH（剔除 Cross），区间=21_ RTH 日低/日高"
+        },
+        "trf_top1": {
+          "time": "16:00:00",
+          "price": 3.31,
+          "size": 105747,
+          "publisher_id": 81,
+          "source": "06_ TRF publisher 81-89"
+        }
+      },
+      "previous_decision_receipt": {
+        "direction": "盘",
+        "confidence_pct": 55.0,
+        "deathline_text": "止损位：**$3.08**（以 3.20 成本计 −3.75%；位于日低 3.175 与 3.20–3.25 低量空档之下、SMC 需求区上沿 3.04 之上）",
+        "deathline_price": 3.08,
+        "actual_change_pct": 0.3,
+        "actual_label": "FLAT",
+        "deathline_hit": "unknown",
+        "status": "应验",
+        "verification_basis": "actual=FLAT; predicted=FLAT"
+      },
+      "current_decision": {
+        "report": "C:\\Users\\Administrator\\Desktop\\opus v4.5\\LXEO-2026-10-07-Hermes.md",
+        "direction": "盘",
+        "confidence_pct": 56.0,
+        "deathline_text": "止损位：**$3.14**（以 3.245 成本计 −3.2%；位于 10-06 日低 3.175 与 3.15–3.20 密集带上沿之下，避开 3.20–3.25 低量空档）",
+        "deathline_price": 3.14
+      }
+    }
+  ]
+}

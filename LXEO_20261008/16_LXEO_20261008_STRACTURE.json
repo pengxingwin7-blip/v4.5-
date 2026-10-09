@@ -1,0 +1,89 @@
+{
+  "schema_version": "structure/1.1",
+  "ticker": "LXEO",
+  "date": "2026-10-08",
+  "generated_at_utc": "2026-10-09T08:04:09.487060+00:00",
+  "tradingview_smc": {
+    "source": "Smart Money Concepts [LuxAlgo]",
+    "status": "LOADED",
+    "support_levels": [
+      3.04
+    ],
+    "resistance_levels": [
+      3.39
+    ],
+    "selected_timeframe": "30",
+    "attempts": [
+      {
+        "周期": "30",
+        "状态": "selected",
+        "支撑位数量": 1,
+        "阻力位数量": 1
+      }
+    ],
+    "raw": {
+      "版本": "structure-map/3",
+      "品种": "BATS:LXEO",
+      "截止日期": "2026-10-08",
+      "参考价格": 3.195,
+      "SMC": {
+        "来源": "Smart Money Concepts [LuxAlgo]",
+        "周期顺序": [
+          "30",
+          "15",
+          "5"
+        ],
+        "选用周期": "30",
+        "support_timeframe": "30",
+        "resistance_timeframe": "30",
+        "尝试记录": [
+          {
+            "周期": "30",
+            "状态": "selected",
+            "支撑位数量": 1,
+            "阻力位数量": 1
+          }
+        ],
+        "支撑位": [
+          {
+            "价格": 3.04,
+            "类型": "support",
+            "周期": "30",
+            "类别": "smc_zone",
+            "触及次数": 1,
+            "距参考价百分比": -4.85,
+            "来源": "Smart Money Concepts [LuxAlgo]",
+            "区间下沿": 2.98,
+            "区间上沿": 3.04
+          }
+        ],
+        "阻力位": [
+          {
+            "价格": 3.39,
+            "类型": "resistance",
+            "周期": "30",
+            "类别": "smc_zone",
+            "触及次数": 1,
+            "距参考价百分比": 6.1,
+            "来源": "Smart Money Concepts [LuxAlgo]",
+            "区间下沿": 3.39,
+            "区间上沿": 3.46
+          }
+        ]
+      },
+      "数据范围": {
+        "周期": "30",
+        "K线数量": 130,
+        "起始": "2026-09-25T13:30:00Z",
+        "结束": "2026-10-08T19:30:00Z"
+      },
+      "口径说明": {
+        "支撑阻力口径": "SMC colored zones only; support = first available blue demand-zone upper edge in 30m -> 15m -> 5m; resistance = first available red supply-zone lower edge in 30m -> 15m -> 5m; a missing side does not erase the available side; no same-side cross-timeframe merge"
+      }
+    }
+  },
+  "provenance": {
+    "tradingview_input": "C:\\Users\\Administrator\\.claude\\skills\\claude-v4.5\\structure\\LXEO_20261008_tv_structure_map.json",
+    "note": "Source: TradingView MCP; indicator: Smart Money Concepts [LuxAlgo]."
+  }
+}
