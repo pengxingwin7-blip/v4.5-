@@ -1,0 +1,99 @@
+{
+  "schema_version": "structure/1.1",
+  "ticker": "SVCO",
+  "date": "2026-10-08",
+  "generated_at_utc": "2026-10-09T08:03:19.340510+00:00",
+  "tradingview_smc": {
+    "source": "Smart Money Concepts [LuxAlgo]",
+    "status": "LOADED",
+    "support_levels": [],
+    "resistance_levels": [
+      8.38
+    ],
+    "selected_timeframe": "30",
+    "attempts": [
+      {
+        "周期": "30",
+        "状态": "partial_levels",
+        "支撑位数量": 0,
+        "阻力位数量": 1
+      },
+      {
+        "周期": "15",
+        "状态": "partial_levels",
+        "支撑位数量": 0,
+        "阻力位数量": 1
+      },
+      {
+        "周期": "5",
+        "状态": "partial_levels",
+        "支撑位数量": 0,
+        "阻力位数量": 1
+      }
+    ],
+    "raw": {
+      "版本": "structure-map/3",
+      "品种": "BATS:SVCO",
+      "截止日期": "2026-10-08",
+      "参考价格": 7.99,
+      "SMC": {
+        "来源": "Smart Money Concepts [LuxAlgo]",
+        "周期顺序": [
+          "30",
+          "15",
+          "5"
+        ],
+        "选用周期": "30",
+        "support_timeframe": null,
+        "resistance_timeframe": "30",
+        "尝试记录": [
+          {
+            "周期": "30",
+            "状态": "partial_levels",
+            "支撑位数量": 0,
+            "阻力位数量": 1
+          },
+          {
+            "周期": "15",
+            "状态": "partial_levels",
+            "支撑位数量": 0,
+            "阻力位数量": 1
+          },
+          {
+            "周期": "5",
+            "状态": "partial_levels",
+            "支撑位数量": 0,
+            "阻力位数量": 1
+          }
+        ],
+        "支撑位": [],
+        "阻力位": [
+          {
+            "价格": 8.38,
+            "类型": "resistance",
+            "周期": "30",
+            "类别": "smc_zone",
+            "触及次数": 1,
+            "距参考价百分比": 4.88,
+            "来源": "Smart Money Concepts [LuxAlgo]",
+            "区间下沿": 8.38,
+            "区间上沿": 8.42
+          }
+        ]
+      },
+      "数据范围": {
+        "周期": "30",
+        "K线数量": 130,
+        "起始": "2026-09-25T13:30:00Z",
+        "结束": "2026-10-08T19:30:00Z"
+      },
+      "口径说明": {
+        "支撑阻力口径": "SMC colored zones only; support = first available blue demand-zone upper edge in 30m -> 15m -> 5m; resistance = first available red supply-zone lower edge in 30m -> 15m -> 5m; a missing side does not erase the available side; no same-side cross-timeframe merge"
+      }
+    }
+  },
+  "provenance": {
+    "tradingview_input": "C:\\Users\\Administrator\\.claude\\skills\\claude-v4.5\\structure\\SVCO_20261008_tv_structure_map.json",
+    "note": "Source: TradingView MCP; indicator: Smart Money Concepts [LuxAlgo]."
+  }
+}

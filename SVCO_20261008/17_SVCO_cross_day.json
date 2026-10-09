@@ -1,0 +1,531 @@
+{
+  "schema_version": "1.1",
+  "ticker": "SVCO",
+  "rolling_days": 5,
+  "updated_at_utc": "2026-10-02T10:25:54.929799+00:00",
+  "rows": [
+    {
+      "date": "2026-09-29",
+      "market": {
+        "date": "2026-09-29",
+        "open": 8.26,
+        "high": 8.48,
+        "low": 7.91,
+        "close": 8.45,
+        "change_pct": 3.68,
+        "rvol": 0.914,
+        "spy_change_pct": -0.18,
+        "rs_vs_spy_pp": 3.86
+      },
+      "flow": {
+        "delta_total": {
+          "bid": 32057,
+          "ask": 25723,
+          "net": 6334
+        },
+        "delta_large": {
+          "bid": 5331,
+          "ask": 5319,
+          "net": 12
+        },
+        "delta_small": {
+          "bid": 26726,
+          "ask": 20404,
+          "net": 6322
+        },
+        "iso_net": -537,
+        "darkpool_prints_net": 2770,
+        "darkpool_prints_direction": "NET_BUY",
+        "darkpool_direction_source": "prints (21_ 3.6_prints, 20_ 口径)",
+        "real_net_flow": 9104,
+        "real_net_flow_direction": "NET_BUY"
+      },
+      "orderbook": {
+        "daily_avg_imbalance": -2.76,
+        "open_imbalance": 19.01,
+        "close_imbalance": 1.69,
+        "spoof_bid_pct": 8.09,
+        "spoof_ask_pct": 4.12,
+        "layering": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 88,
+          "CHURN": 11,
+          "ICE_N": 10,
+          "ICE_P": 0,
+          "ICE_S1": 11,
+          "ICE_S2": 0,
+          "ICE_S3": 1,
+          "ICE_X": 6,
+          "LAYERING": 0,
+          "MATCHED": 2,
+          "TRF": 17,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 5.25,
+          "direction": "BID",
+          "dominant": "B",
+          "ret_300s": 3.0,
+          "zone": "LOW",
+          "price_mid": 8.0125
+        }
+      },
+      "premeditation": {
+        "bid_strong": 0,
+        "ask_strong": 0,
+        "direction": "降级",
+        "direction_ratio_ba": "NA（降级，双侧 0）"
+      },
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 8.48,
+            "day_low": 7.91,
+            "open": 8.31,
+            "close": 8.45
+          },
+          "walls": {
+            "bias": "BID",
+            "candidate_count": 50,
+            "levels": [
+              {
+                "price": 8.24,
+                "side": "B",
+                "size": 2400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.22,
+                "side": "B",
+                "size": 2400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.19,
+                "side": "B",
+                "size": 2400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.17,
+                "side": "B",
+                "size": 2400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.15,
+                "side": "B",
+                "size": 2400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.08,
+                "side": "B",
+                "size": 2400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.52,
+                "side": "A",
+                "size": 1100,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.33,
+                "side": "A",
+                "size": 1100,
+                "level": "OUTSIDE_L5"
+              }
+            ]
+          }
+        },
+        "volume_zones": {
+          "LOW": {
+            "pct": 28.5
+          },
+          "MID": {
+            "pct": 37.1
+          },
+          "HIGH": {
+            "pct": 34.4
+          }
+        },
+        "trf_top1": {
+          "time": "10:09:23",
+          "price": 8.095,
+          "size": 5000,
+          "zone_pct": 32.5
+        }
+      },
+      "previous_decision_receipt": {
+        "direction": null,
+        "confidence_pct": null,
+        "deathline_text": null,
+        "deathline_price": null,
+        "actual_change_pct": 3.68,
+        "actual_label": "UP",
+        "deathline_hit": "unknown",
+        "status": "待验证",
+        "verification_basis": "actual=UP; predicted=NA"
+      },
+      "current_decision": {
+        "report": "C:\\Users\\Administrator\\Desktop\\kimi 4.5\\SVCO-2026-09-29-Hermes.md",
+        "direction": "涨",
+        "confidence_pct": 66.0,
+        "deathline_text": "失效条件①收盘跌破 $7.98（TRF 承接位 7.99 下1tick，洗盘定性作废）；②盘中跌破 $7.91（当日日低，生死线，无条件离场）。止损位 $7.98（入场中值8.28计-3.6%）。",
+        "deathline_price": 7.98,
+        "intent": "2.1 价格压制洗盘 + 8 日内高卖低买；矩阵=洗4.5/派1"
+      },
+      "patch_source": "21_ JSON + 05_/06_ of the same evidence pack (patched after generator)"
+    },
+    {
+      "date": "2026-09-30",
+      "market": {
+        "date": "2026-09-30",
+        "open": 8.4,
+        "high": 9.0,
+        "low": 8.4,
+        "close": 8.76,
+        "change_pct": 3.67,
+        "rvol": 1.581,
+        "spy_change_pct": -0.21,
+        "rs_vs_spy_pp": 3.88
+      },
+      "flow": {
+        "delta_total": {
+          "bid": null,
+          "ask": null,
+          "net": null
+        },
+        "delta_large": {
+          "bid": null,
+          "ask": null,
+          "net": null
+        },
+        "delta_small": {
+          "bid": null,
+          "ask": null,
+          "net": null
+        },
+        "iso_net": null,
+        "darkpool_prints_net": null,
+        "darkpool_prints_direction": null,
+        "darkpool_direction_source": "NA",
+        "real_net_flow": null,
+        "real_net_flow_direction": null
+      },
+      "orderbook": {
+        "daily_avg_imbalance": null,
+        "open_imbalance": null,
+        "close_imbalance": null,
+        "spoof_bid_pct": null,
+        "spoof_ask_pct": null,
+        "layering": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 152,
+          "CHURN": 19,
+          "ICE_N": 25,
+          "ICE_P": 0,
+          "ICE_S1": 38,
+          "ICE_S2": 2,
+          "ICE_S3": 1,
+          "ICE_X": 32,
+          "LAYERING": 0,
+          "MATCHED": 5,
+          "TRF": 22,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 0.44,
+          "direction": "ASK",
+          "dominant": "A",
+          "ret_300s": -2.0,
+          "zone": "HIGH",
+          "price_mid": 8.785
+        }
+      },
+      "premeditation": {
+        "bid_strong": null,
+        "ask_strong": null,
+        "direction": null,
+        "direction_ratio_ba": null
+      },
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 9.005,
+            "day_low": 8.24,
+            "open": 8.24,
+            "close": 8.76
+          },
+          "walls": {
+            "bias": "ASK",
+            "candidate_count": 719,
+            "levels": [
+              {
+                "price": 8.58,
+                "side": "B",
+                "size": 4966,
+                "level": "B1"
+              },
+              {
+                "price": 8.63,
+                "side": "A",
+                "size": 4310,
+                "level": "A2"
+              },
+              {
+                "price": 8.7,
+                "side": "B",
+                "size": 3300,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.86,
+                "side": "A",
+                "size": 3300,
+                "level": "A5"
+              },
+              {
+                "price": 8.65,
+                "side": "B",
+                "size": 3300,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.91,
+                "side": "A",
+                "size": 3300,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.63,
+                "side": "B",
+                "size": 3300,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.93,
+                "side": "A",
+                "size": 3300,
+                "level": "OUTSIDE_L5"
+              }
+            ]
+          }
+        },
+        "volume_zones": null,
+        "trf_top1": null
+      },
+      "previous_decision_receipt": {
+        "direction": "涨",
+        "confidence_pct": 66.0,
+        "deathline_text": "失效条件①收盘跌破 $7.98（TRF 承接位 7.99 下1tick，洗盘定性作废）；②盘中跌破 $7.91（当日日低，生死线，无条件离场）。止损位 $7.98（入场中值8.28计-3.6%）。",
+        "deathline_price": 7.98,
+        "actual_change_pct": 3.67,
+        "actual_label": "UP",
+        "deathline_hit": "no",
+        "status": "应验",
+        "verification_basis": "actual=UP (+3.67%); predicted=UP; 09-30 低 8.40 > 止损 7.98，生死线 7.91 未触及；短线止盈 8.81 于 09-30 达成（高 9.00）"
+      },
+      "current_decision": {
+        "report": null,
+        "direction": null,
+        "confidence_pct": null,
+        "deathline_text": null,
+        "deathline_price": null
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "market": {
+        "date": "2026-10-01",
+        "open": 8.78,
+        "high": 9.72,
+        "low": 8.7,
+        "close": 9.02,
+        "change_pct": 2.97,
+        "rvol": 2.028,
+        "spy_change_pct": 0.18,
+        "rs_vs_spy_pp": 2.79
+      },
+      "flow": {
+        "delta_total": {
+          "bid": 101565,
+          "ask": 108678,
+          "net": -7113
+        },
+        "delta_large": {
+          "bid": 17838,
+          "ask": 28623,
+          "net": -10785
+        },
+        "delta_small": {
+          "bid": 83727,
+          "ask": 80055,
+          "net": 3672
+        },
+        "iso_net": -28886,
+        "darkpool_prints_net": -44521,
+        "darkpool_prints_direction": "NET_SELL",
+        "darkpool_direction_source": "prints (21_ 3.6_prints, 20_ 口径)",
+        "real_net_flow": -51634,
+        "real_net_flow_direction": "NET_SELL"
+      },
+      "orderbook": {
+        "daily_avg_imbalance": -2.11,
+        "open_imbalance": -10.74,
+        "close_imbalance": 25.74,
+        "spoof_bid_pct": 5.16,
+        "spoof_ask_pct": 6.73,
+        "layering": {
+          "up": 1,
+          "down": 0
+        }
+      },
+      "behavior_clusters": {
+        "family_counts": {
+          "ABSORB": 0,
+          "CANCEL": 157,
+          "CHURN": 21,
+          "ICE_N": 35,
+          "ICE_P": 0,
+          "ICE_S1": 44,
+          "ICE_S2": 3,
+          "ICE_S3": 9,
+          "ICE_X": 27,
+          "LAYERING": 1,
+          "MATCHED": 5,
+          "TRF": 26,
+          "VOID": 0
+        },
+        "bilateral_strongest": {
+          "ratio": 2.42,
+          "direction": "BID",
+          "dominant": "B",
+          "ret_300s": -2.0,
+          "zone": "LOW",
+          "price_mid": 9.07
+        }
+      },
+      "premeditation": {
+        "bid_strong": 910.0,
+        "ask_strong": 0,
+        "direction": "降级",
+        "direction_ratio_ba": "910:0（降级）"
+      },
+      "structure": {
+        "sandwich_wall_levels": {
+          "key_levels": {
+            "day_high": 9.72,
+            "day_low": 8.74,
+            "open": 8.75,
+            "close": 9.02
+          },
+          "walls": {
+            "bias": "ASK",
+            "candidate_count": 1118,
+            "levels": [
+              {
+                "price": 9.45,
+                "side": "A",
+                "size": 100000,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 9.16,
+                "side": "A",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.91,
+                "side": "B",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 9.24,
+                "side": "A",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.83,
+                "side": "B",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 9.27,
+                "side": "A",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 8.8,
+                "side": "B",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              },
+              {
+                "price": 9.32,
+                "side": "A",
+                "size": 4400,
+                "level": "OUTSIDE_L5"
+              }
+            ]
+          }
+        },
+        "volume_zones": {
+          "LOW": {
+            "pct": 10.2
+          },
+          "MID": {
+            "pct": 67.8
+          },
+          "HIGH": {
+            "pct": 22.1
+          }
+        },
+        "trf_top1": {
+          "time": "10:28:36",
+          "price": 9.52,
+          "size": 9212,
+          "zone_pct": 80.4
+        }
+      },
+      "previous_decision_receipt": {
+        "direction": null,
+        "confidence_pct": null,
+        "deathline_text": null,
+        "deathline_price": null,
+        "actual_change_pct": 2.97,
+        "actual_label": "UP",
+        "deathline_hit": "unknown",
+        "status": "无前一日裁决（09-30 未分析）",
+        "verification_basis": "09-30 无 Hermes 裁决；参照最近一次裁决 09-29 涨 66%：8.45→9.02 两日 +6.75%（>6% 涨阈值）应验，短线 8.81 / 中线 9.20 均达成，止损 7.98 / 生死线 7.91 未触及"
+      },
+      "current_decision": {
+        "report": "C:\\Users\\Administrator\\Desktop\\kimi 4.5\\SVCO-2026-10-01-Hermes.md",
+        "direction": "跌",
+        "confidence_pct": 60.0,
+        "deathline_text": "生死线 $9.46（收盘站上 9.45 巨型卖墙即作废）；失效②：守住 $8.90 并收复 $9.26 → 转盘；跌判目标 $8.45–8.55（−6% 阈值 $8.48）；建议=观望（置信度 60%<65%）",
+        "deathline_price": 9.46,
+        "intent": "1.4 高位巨量拉升出货 + 1.2 托单派发；矩阵=洗0.5/派4"
+      },
+      "patch_source": "21_ JSON + 05_/06_ of the same evidence pack (patched after generator)"
+    }
+  ]
+}
